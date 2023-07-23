@@ -208,7 +208,7 @@
 		function updateCarMovement() {
 			const time = performance.now() * 0.001;
 
-			// 更新车辆的位置和旋转
+			// 更新車輛的位置和旋轉
 			if (moveForward) {
 				carVelocity.add(moveDirection.set(Math.cos(carRotation.y), 0, Math.sin(carRotation.y)).multiplyScalar(carSpeed));
 			}
@@ -227,12 +227,12 @@
 
 			carRotation.y += carAngularVelocity;
 
-			carVelocity.multiplyScalar(0.9); // 减少速度
-			carAngularVelocity *= 0.9; // 减少角速度
+			carVelocity.multiplyScalar(0.9); // 減少速度
+			carAngularVelocity *= 0.9; // 減少角速度
 		}
 
 		function render() {
-			// 设置车辆模型的位置和旋转
+			// 設置車輛模型的位置和旋轉
 			mesh.position.copy(carPosition);
 			mesh.rotation.copy(carRotation);
 
