@@ -604,7 +604,7 @@
 
         setTimeout(function () {
             $("#collectedModal").modal("hide");
-        }, 10000); // 這裡的3000是3秒，你可以根據需要調整這個時間
+        }, 10000); 
         }
 
         if (boat.boat) {
@@ -747,7 +747,6 @@
         );
         if (distanceFromCenter <= 500) {
             if (!hasDisplayedModal) {
-            // 確保彈出視窗只顯示一次
             dolModal.show();
             hasDisplayedModal = true;
             }
