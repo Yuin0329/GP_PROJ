@@ -1,2 +1,5 @@
 # GP_PROJ
-備用
+npm install 
+npm run dev 
+
+
